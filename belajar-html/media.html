@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <head>
     <title>Document</title>
+
+    <style>
+        body{
+            background-image: url("background.jpg");
+            background-color: green;
+        }
+        .warnahijau{
+            color: green;
+        }
+        .warnakuning{
+            background-color: yellow;
+        }
+        #warnamerah{
+            color: red;
+        }
+        .gambarbulat{
+            border-radius: 50%;
+        }
+    </style>
+
 </head>
 <body>
-    <a href="index.html">Kembali ke Index</a>
+    <a href="index.html" class="warnahijau">Kembali ke Index</a>
     <hr>
 
     <table border="1" width="90%">
         <tr>
             <td>
-                <img src="gambar.jpg" width="500px" height="250px">
+                <img src="gambar.jpg" width="250px" height="250px" class="gambarbulat">
             </td>
-            <td>
-                <video controls width="500px" height="200px">
+            <td class="warnakuning">
+                <video controls width="300px" height="200px">
                     <source src="video.mp4" type="video/mp4">
                 </video>
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="warnakuning">
                 <audio controls>
                     <source src="audio.mp3" type="audio/mp3">
                 </audio>
             </td>
-            <td>Kolom 2 Baris 2</td>
+            <td style="background-color: blue; color: white;">
+                <img src="gambar.jpg" width="100" height="100" class="gambarbulat">
+            </td>
         </tr>
     </table>
+
+    <p class="warnahijau">
+        OL (Ordered List) = 1, A, a, i.<br>
+        UL (Un-ordered List) = square, bullet.
+    </p>
+    
+    Daftar Nama :
+    <ol type="A">
+        <li>Febro</li>
+        <li>Daniel</li>
+        <li>Hamim</li>
+    </ol>
+
+    Nama-Nama Kota :
+    <ul id="warnamerah">
+        <li>Jakarta</li>
+        <li>Bekasi</li>
+    </ul>
+
+    <iframe src="index.html" width="400" height="200" title="w3school Website"></iframe>
+
+    POST / GET<br>
+    Submit -> 
+    Reset -> 
+    Button 
+    <form method="GET" action="">
+        Nama : <input type="text" name="namauser"><br>
+        Jenis Kelamin : <input type="radio" name="jenkel" value="laki-laki"> Laki - Laki 
+        <input type="radio" name="jenkel" value="perempuan"> Perempuan<br>
+        <input type="submit" name="simpan" value="Simpan Data"> | <input type="reset" name="reset" value="Reset Data">
+    </form>
+
 
     <hr>
     
